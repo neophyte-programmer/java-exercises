@@ -6,34 +6,35 @@ import java.lang.*;
 public class Main {
     //    2 DIMENSIONAL OBJECTS
     // Area of circle
-    public static double circle(int radius) {
+    public static double circle(double radius) {
         // π × r2
         return Math.PI * Math.pow(2, radius);
     }
 
     // Area of triangle
-    public static float triangle() {
-        return 5;
+    public static double triangle(double base, double height) {
+//        ½ × b × h
+        return 0.5 * base * height;
     }
 
     // Area of square
-    public static float square() {
-        return 5;
+    public static double square(double length) {
+        return Math.pow(2, length);
     }
 
     // Area of rectangle
-    public static float rectangle() {
-        return 5;
+    public static double rectangle(double length, double width) {
+        return length * width;
     }
 
     // Area of parallelogram
-    public static float parallelogram() {
-        return 5;
+    public static double parallelogram(double base, double height) {
+        return base * height;
     }
 
     // Area of trapezium
-    public static float trapezium() {
-        return 5;
+    public static double trapezium(double a, double b, double height) {
+        return 0.5 * (a + b) * height;
     }
 
     // Area of ellipse
@@ -42,8 +43,8 @@ public class Main {
     }
 
     // Area of polygon
-    public static float polygon() {
-        return 5;
+    public static double polygon(int sides, double length) {
+        return sides * Math.pow(2, length) / (4 * Math.tan(Math.PI / sides));
     }
 
     //    3 DIMENSIONAL OBJECTS
