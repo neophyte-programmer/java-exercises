@@ -53,6 +53,26 @@ public class Main {
         String operation = inputObject.next();
 
         // Validate operation
+        switch (operation) {
+            case "+":
+                System.out.println("add");
+                break;
+            case "-":
+                System.out.println("subtract");
+                break;
+            case "*":
+                System.out.println("multiply");
+                break;
+            case "/":
+                System.out.println("divide");
+                break;
+            case "%":
+                System.out.println("modulo");
+                break;
+            default:
+                System.out.println("You did not enter a correct input");
+                break;
+        }
 
         // Print results
     }
