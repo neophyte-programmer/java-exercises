@@ -55,25 +55,29 @@ public class Main {
         // Validate operation
         switch (operation) {
             case "+":
-                System.out.println("add");
+                int sum = add(firstNumber, secondNumber);
+                System.out.println("The answer is: " + sum);
                 break;
             case "-":
-                System.out.println("subtract");
+                int difference = subtract(firstNumber, secondNumber);
+                System.out.println("The answer is: " + difference);
                 break;
             case "*":
-                System.out.println("multiply");
+                int product = multiply(firstNumber, secondNumber);
+                System.out.println("The answer is: " + product);
                 break;
             case "/":
-                System.out.println("divide");
+                int quotient = divide(firstNumber, secondNumber);
+                System.out.println("The answer is: " + quotient);
                 break;
             case "%":
-                System.out.println("modulo");
+                int remainder = modulo(firstNumber, secondNumber);
+                System.out.println("The answer is: " + remainder);
                 break;
             default:
                 System.out.println("You did not enter a correct input");
                 break;
         }
 
-        // Print results
     }
 }
