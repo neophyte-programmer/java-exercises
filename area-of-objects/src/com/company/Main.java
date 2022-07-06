@@ -38,8 +38,9 @@ public class Main {
     }
 
     // Area of ellipse
-    public static float ellipse() {
-        return 5;
+    public static double ellipse(double a, double b) {
+//        πab
+        return Math.PI * a * b;
     }
 
     // Area of polygon
@@ -49,33 +50,33 @@ public class Main {
 
     //    3 DIMENSIONAL OBJECTS
     // Area of cube
-    public static float cube() {
-        return 5;
+    public static double cube(double length) {
+        return 6 * Math.pow(2, length);
     }
 
     // Area of rectangular prism
-    public static float rectangularPrism() {
-        return 5;
+    public static double rectangularPrism(double length, double width, double height) {
+        return 2 * ( (length * width) + (height * length) + (height * width));
     }
 
     // Area of cylinder
-    public static float cylinder() {
-        return 5;
+    public static double cylinder(double radius, double height) {
+        return 2 * Math.PI * radius * ( radius + height);
     }
 
     // Area of cone
-    public static float cone() {
-        return 5;
+    public static double cone(double radius, double length) {
+        return Math.PI * radius * ( radius + length);
     }
 
     // Area of sphere
-    public static float sphere() {
-        return 5;
+    public static double sphere(double radius) {
+        return 4 * Math.PI * Math.pow(2, radius);
     }
 
     // Area of hemisphere
-    public static float hemisphere() {
-        return 5;
+    public static double hemisphere(double radius) {
+        return 3 * Math.PI * Math.pow(2, radius);
     }
 
     public static void main(String[] args) {
