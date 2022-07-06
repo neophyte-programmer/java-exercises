@@ -1,12 +1,14 @@
 package com.company;
 
 import java.util.*;
+import java.lang.*;
 
 public class Main {
     //    2 DIMENSIONAL OBJECTS
     // Area of circle
-    public static float circle() {
-        return 5;
+    public static float circle(int radius) {
+        // π × r2
+        return (float) (Math.PI * Math.pow(2, radius));
     }
 
     // Area of triangle
@@ -77,6 +79,8 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
+
 
         System.out.println("""
                 Hello, welcome to the Area Calculator!
