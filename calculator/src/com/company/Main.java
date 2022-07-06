@@ -13,8 +13,8 @@ public class Main {
     }
 
     // Perform multiplication
-    public static int multiply(){
-        return 5;
+    public static int multiply(int num1, int num2){
+        return num1 * num2;
     }
 
     // Perform division
