@@ -1,2 +1,3 @@
 # java-exercises
-Documenting Java practice questions
+
+To see the source code, navigate to `src / com / company / Main.java `
