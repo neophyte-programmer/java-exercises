@@ -1,4 +1,5 @@
 package com.company;
+import java.util.Scanner;
 
 public class Main {
 
@@ -7,7 +8,18 @@ public class Main {
 
         // Take input
 
+        // Read first input
+        Scanner inputObject = new Scanner(System.in);
+        System.out.println("Enter first number: ");
+        int firstNumber = inputObject.nextInt();
+
+        // Read second input
+        System.out.println("Enter second number: ");
+        int secondNumber = inputObject.nextInt();
+
+
         // Perform addition
+
 
         // Perform subtraction
 
