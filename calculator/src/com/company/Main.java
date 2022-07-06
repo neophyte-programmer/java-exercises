@@ -2,6 +2,30 @@ package com.company;
 import java.util.Scanner;
 
 public class Main {
+    // Perform addition
+    public static int add(){
+        return 5;
+    }
+
+    // Perform subtraction
+    public static int subtract(){
+        return 5;
+    }
+
+    // Perform multiplication
+    public static int multiply(){
+        return 5;
+    }
+
+    // Perform division
+    public static int divide(){
+        return 5;
+    }
+
+    // Perform modulo
+    public static int modulo(){
+        return 5;
+    }
 
     public static void main(String[] args) {
     //	Write a Java program to print the sum, product, difference, quotient and remainder of two numbers.
@@ -18,16 +42,9 @@ public class Main {
         int secondNumber = inputObject.nextInt();
 
 
-        // Perform addition
 
 
-        // Perform subtraction
 
-        // Perform multiplication
-
-        // Perform division
-
-        // Perform modulo
 
         // Print results
     }
