@@ -108,6 +108,44 @@ public class Main {
                     ( 8 ) Polygon
                     """);
             int objectSelect = sc.nextInt();
+
+            switch (objectSelect) {
+                case 1:
+                    System.out.println("You selected Circle!\n\nEnter the radius: ");
+                    int circleRadius = sc.nextInt();
+                    double circleAnswer = circle(circleRadius);
+                    System.out.println("The area of the circle is: " + circleAnswer);
+                    break;
+                case 2:
+                    System.out.println("Enter the base: ");
+                    int triangleBase = sc.nextInt();
+                    System.out.println("Enter the height: ");
+                    int triangleHeight = sc.nextInt();
+                    double triangleAnswer = triangle(triangleBase, triangleHeight);
+                    System.out.println("The area of the triangle is: " + triangleAnswer);
+                    break;
+                case 3:
+                    System.out.println("Enter the length: ");
+                    break;
+                case 4:
+                    System.out.println("Enter the radius: ");
+                    break;
+                case 5:
+                    System.out.println("Enter the radius: ");
+                    break;
+                case 6:
+                    System.out.println("Enter the radius: ");
+                    break;
+                case 7:
+                    System.out.println("Enter the radius: ");
+                    break;
+                case 8:
+                    System.out.println("Enter the radius: ");
+                    break;
+                default:
+                    System.out.println("You didn't make a valid entry ");
+                    break;
+            }
         }
         else if (objectOption == 2) {
             System.out.println("""
