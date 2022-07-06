@@ -11,9 +11,12 @@ public class Main {
         System.out.println("Enter your times table number: ");
         int number = sc.nextInt();
 
+        int product;
+
         // Loop through multiplication
         for (int i = 1; i <= 12; i++) {
-            System.out.println(i);
+            product = number * i;
+            System.out.println(number + " x " + i + " = " + product);
         }
 
 
