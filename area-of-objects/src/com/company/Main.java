@@ -6,9 +6,9 @@ import java.lang.*;
 public class Main {
     //    2 DIMENSIONAL OBJECTS
     // Area of circle
-    public static float circle(int radius) {
+    public static double circle(int radius) {
         // π × r2
-        return (float) (Math.PI * Math.pow(2, radius));
+        return Math.PI * Math.pow(2, radius);
     }
 
     // Area of triangle
