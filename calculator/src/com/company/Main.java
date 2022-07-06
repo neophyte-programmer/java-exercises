@@ -8,8 +8,8 @@ public class Main {
     }
 
     // Perform subtraction
-    public static int subtract(){
-        return 5;
+    public static int subtract(int num1, int num2){
+        return num1 - num2;
     }
 
     // Perform multiplication
