@@ -52,31 +52,29 @@ public class Main {
                 ( % ) for remainder""");
         String operation = inputObject.next();
 
-        // Validate operation
+        // Validate operation and print results
         switch (operation) {
-            case "+":
+            case "+" -> {
                 int sum = add(firstNumber, secondNumber);
                 System.out.println("The answer is: " + sum);
-                break;
-            case "-":
+            }
+            case "-" -> {
                 int difference = subtract(firstNumber, secondNumber);
                 System.out.println("The answer is: " + difference);
-                break;
-            case "*":
+            }
+            case "*" -> {
                 int product = multiply(firstNumber, secondNumber);
                 System.out.println("The answer is: " + product);
-                break;
-            case "/":
+            }
+            case "/" -> {
                 int quotient = divide(firstNumber, secondNumber);
                 System.out.println("The answer is: " + quotient);
-                break;
-            case "%":
+            }
+            case "%" -> {
                 int remainder = modulo(firstNumber, secondNumber);
                 System.out.println("The answer is: " + remainder);
-                break;
-            default:
-                System.out.println("You did not enter a correct input");
-                break;
+            }
+            default -> System.out.println("You did not enter a correct input");
         }
 
     }
