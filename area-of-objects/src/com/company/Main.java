@@ -1,7 +1,9 @@
 package com.company;
 
+import java.util.*;
+
 public class Main {
-//    2 DIMENSIONAL OBJECTS
+    //    2 DIMENSIONAL OBJECTS
     // Area of circle
     public static float circle() {
         return 5;
@@ -42,7 +44,7 @@ public class Main {
         return 5;
     }
 
-//    3 DIMENSIONAL OBJECTS
+    //    3 DIMENSIONAL OBJECTS
     // Area of cube
     public static float cube() {
         return 5;
@@ -74,8 +76,49 @@ public class Main {
     }
 
     public static void main(String[] args) {
-	// Calculate the area of objects
-//  2D - circle, triangle, square, rectangle, parallelogram, trapezium, ellipse, polygon
-//  3D - cube, rectangular prism, cylinder, cone, sphere, hemisphere,
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("""
+                Hello, welcome to the Area Calculator!
+                =======================================
+
+                Enter the type of object you want to compute
+                ( 1 ) for 2D objects
+                ( 2 ) for 3D objects
+                """);
+        int objectOption = sc.nextInt();
+
+        if (objectOption == 1) {
+            System.out.println("""
+                    Enter the object you want to compute
+                    =====================================
+                    ( 1 ) Circle
+                    ( 2 ) Triangle
+                    ( 3 ) Square
+                    ( 4 ) Rectangle
+                    ( 5 ) Parallelogram
+                    ( 6 ) Trapezium
+                    ( 7 ) Ellipse
+                    ( 8 ) Polygon
+                    """);
+            int objectSelect = sc.nextInt();
+        }
+        else if (objectOption == 2) {
+            System.out.println("""
+                    Enter the object you want to compute
+                    =====================================
+                    ( 1 ) Cube
+                    ( 2 ) Rectangular Prism
+                    ( 3 ) Cylinder
+                    ( 4 ) Cone
+                    ( 5 ) Sphere
+                    ( 6 ) Hemisphere
+                    """);
+            int objectSelect = sc.nextInt();
+        }
+        else {
+            System.out.println("You entered a wrong input! ");
+        }
+
     }
 }
