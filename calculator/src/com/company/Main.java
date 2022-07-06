@@ -18,8 +18,8 @@ public class Main {
     }
 
     // Perform division
-    public static int divide(){
-        return 5;
+    public static int divide(int num1, int num2){
+        return num1 / num2;
     }
 
     // Perform modulo
