@@ -110,43 +110,43 @@ public class Main {
             int object2D = sc.nextInt();
 
             switch (object2D) {
-                case 1:
+                case 1 -> {
                     System.out.println("You selected Circle!\n\nEnter the radius: ");
                     double circleRadius = sc.nextDouble();
                     double circleAnswer = circle(circleRadius);
                     System.out.println("The area of the circle is: " + circleAnswer);
-                    break;
-                case 2:
+                }
+                case 2 -> {
                     System.out.println("You selected Triangle!\n\nEnter the base: ");
                     double triangleBase = sc.nextDouble();
                     System.out.println("Enter the height: ");
                     double triangleHeight = sc.nextDouble();
                     double triangleAnswer = triangle(triangleBase, triangleHeight);
                     System.out.println("The area of the triangle is: " + triangleAnswer);
-                    break;
-                case 3:
+                }
+                case 3 -> {
                     System.out.println("You selected Square!\n\nEnter the length: ");
                     double squareLength = sc.nextDouble();
                     double squareAnswer = square(squareLength);
                     System.out.println("The area of the square is: " + squareAnswer);
-                    break;
-                case 4:
+                }
+                case 4 -> {
                     System.out.println("You selected Rectangle!\n\nEnter the length: ");
                     double rectangleLength = sc.nextDouble();
                     System.out.println("Enter the width: ");
                     double rectangleWidth = sc.nextDouble();
                     double rectangleAnswer = rectangle(rectangleLength, rectangleWidth);
                     System.out.println("The area of the rectangle is: " + rectangleAnswer);
-                    break;
-                case 5:
+                }
+                case 5 -> {
                     System.out.println("You selected Parallelogram!\n\nEnter the base: ");
                     double pBase = sc.nextDouble();
                     System.out.println("Enter the height: ");
                     double pHeight = sc.nextDouble();
                     double pAnswer = parallelogram(pBase, pHeight);
                     System.out.println("The area of the parallelogram is: " + pAnswer);
-                    break;
-                case 6:
+                }
+                case 6 -> {
                     System.out.println("You selected Parallelogram!\n\nEnter the first side: ");
                     double trapeziumA = sc.nextDouble();
                     System.out.println("Enter the second side: ");
@@ -155,26 +155,24 @@ public class Main {
                     double trapeziumHeight = sc.nextDouble();
                     double trapeziumAnswer = trapezium(trapeziumA, trapeziumB, trapeziumHeight);
                     System.out.println("The area of the trapezium is: " + trapeziumAnswer);
-                    break;
-                case 7:
+                }
+                case 7 -> {
                     System.out.println("You selected Ellipse!\n\nEnter the half of minor axis: ");
                     double ellipseA = sc.nextDouble();
                     System.out.println("Enter half of major axis");
                     double ellipseB = sc.nextDouble();
                     double ellipseAnswer = ellipse(ellipseA, ellipseB);
                     System.out.println("The area of the ellipse is: " + ellipseAnswer);
-                    break;
-                case 8:
+                }
+                case 8 -> {
                     System.out.println("You selected Polygon!\n\nEnter the number of sides: ");
                     int numberOfSides = sc.nextInt();
                     System.out.println("Enter the length of side: ");
                     double lengthOfSides = sc.nextDouble();
                     double polygonAnswer = polygon(numberOfSides, lengthOfSides);
                     System.out.println("The area of the polygon is: " + polygonAnswer);
-                    break;
-                default:
-                    System.out.println("You didn't make a valid entry ");
-                    break;
+                }
+                default -> System.out.println("You didn't make a valid entry ");
             }
         }
         else if (objectOption == 2) {
@@ -191,13 +189,13 @@ public class Main {
             int object3D = sc.nextInt();
 
             switch (object3D) {
-                case 1:
+                case 1 -> {
                     System.out.println("You selected Cube!\n\nEnter the length: ");
                     double cubeLength = sc.nextDouble();
                     double cubeAnswer = cube(cubeLength);
                     System.out.println("The area of the cube is: " + cubeAnswer);
-                    break;
-                case 2:
+                }
+                case 2 -> {
                     System.out.println("You selected Rectangular Prism!\n\nEnter the length: ");
                     double rLength = sc.nextDouble();
                     System.out.println("Enter the height: ");
@@ -206,38 +204,36 @@ public class Main {
                     double rWidth = sc.nextDouble();
                     double rAnswer = rectangularPrism(rLength, rWidth, rHeight);
                     System.out.println("The area of the rectangular prism is: " + rAnswer);
-                    break;
-                case 3:
+                }
+                case 3 -> {
                     System.out.println("You selected Cylinder!\n\nEnter the radius: ");
                     double cylinderRadius = sc.nextDouble();
                     System.out.println("Enter the height: ");
                     double cylinderHeight = sc.nextDouble();
                     double cylinderAnswer = cylinder(cylinderRadius, cylinderHeight);
                     System.out.println("The area of the cylinder is: " + cylinderAnswer);
-                    break;
-                case 4:
+                }
+                case 4 -> {
                     System.out.println("You selected Cone!\n\nEnter the length: ");
                     double coneLength = sc.nextDouble();
                     System.out.println("Enter the radius: ");
                     double coneRadius = sc.nextDouble();
                     double coneAnswer = cone(coneRadius, coneLength);
                     System.out.println("The area of the cone is: " + coneAnswer);
-                    break;
-                case 5:
+                }
+                case 5 -> {
                     System.out.println("You selected Sphere!\n\nEnter the radius: ");
                     double sphereRadius = sc.nextDouble();
                     double sphereAnswer = sphere(sphereRadius);
                     System.out.println("The area of the sphere is: " + sphereAnswer);
-                    break;
-                case 6:
+                }
+                case 6 -> {
                     System.out.println("You selected Hemisphere!\n\nEnter the radius: ");
                     double hemisphereRadius = sc.nextDouble();
-                    double hemisphereAnswer = sphere(hemisphereRadius);
+                    double hemisphereAnswer = hemisphere(hemisphereRadius);
                     System.out.println("The area of the sphere is: " + hemisphereAnswer);
-                    break;
-                default:
-                    System.out.println("You didn't make a valid entry ");
-                    break;
+                }
+                default -> System.out.println("You didn't make a valid entry ");
             }
         }
         else {
