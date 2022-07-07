@@ -112,35 +112,65 @@ public class Main {
             switch (objectSelect) {
                 case 1:
                     System.out.println("You selected Circle!\n\nEnter the radius: ");
-                    int circleRadius = sc.nextInt();
+                    double circleRadius = sc.nextDouble();
                     double circleAnswer = circle(circleRadius);
                     System.out.println("The area of the circle is: " + circleAnswer);
                     break;
                 case 2:
-                    System.out.println("Enter the base: ");
-                    int triangleBase = sc.nextInt();
+                    System.out.println("You selected Triangle!\n\nEnter the base: ");
+                    double triangleBase = sc.nextDouble();
                     System.out.println("Enter the height: ");
-                    int triangleHeight = sc.nextInt();
+                    double triangleHeight = sc.nextDouble();
                     double triangleAnswer = triangle(triangleBase, triangleHeight);
                     System.out.println("The area of the triangle is: " + triangleAnswer);
                     break;
                 case 3:
-                    System.out.println("Enter the length: ");
+                    System.out.println("You selected Square!\n\nEnter the length: ");
+                    double squareLength = sc.nextDouble();
+                    double squareAnswer = square(squareLength);
+                    System.out.println("The area of the square is: " + squareAnswer);
                     break;
                 case 4:
-                    System.out.println("Enter the radius: ");
+                    System.out.println("You selected Rectangle!\n\nEnter the length: ");
+                    double rectangleLength = sc.nextDouble();
+                    System.out.println("Enter the width: ");
+                    double rectangleWidth = sc.nextDouble();
+                    double rectangleAnswer = rectangle(rectangleLength, rectangleWidth);
+                    System.out.println("The area of the rectangle is: " + rectangleAnswer);
                     break;
                 case 5:
-                    System.out.println("Enter the radius: ");
+                    System.out.println("You selected Parallelogram!\n\nEnter the base: ");
+                    double pBase = sc.nextDouble();
+                    System.out.println("Enter the height: ");
+                    double pHeight = sc.nextDouble();
+                    double pAnswer = parallelogram(pBase, pHeight);
+                    System.out.println("The area of the parallelogram is: " + pAnswer);
                     break;
                 case 6:
-                    System.out.println("Enter the radius: ");
+                    System.out.println("You selected Parallelogram!\n\nEnter the first side: ");
+                    double trapeziumA = sc.nextDouble();
+                    System.out.println("Enter the second side: ");
+                    double trapeziumB = sc.nextDouble();
+                    System.out.println("Enter the height: ");
+                    double trapeziumHeight = sc.nextDouble();
+                    double trapeziumAnswer = trapezium(trapeziumA, trapeziumB, trapeziumHeight);
+                    System.out.println("The area of the trapezium is: " + trapeziumAnswer);
                     break;
                 case 7:
-                    System.out.println("Enter the radius: ");
+                    System.out.println("You selected Ellipse!\n\nEnter the half of minor axis: ");
+                    double ellipseA = sc.nextDouble();
+                    System.out.println("Enter half of major axis");
+                    double ellipseB = sc.nextDouble();
+                    double ellipseAnswer = ellipse(ellipseA, ellipseB);
+                    System.out.println("The area of the ellipse is: " + ellipseAnswer);
                     break;
                 case 8:
-                    System.out.println("Enter the radius: ");
+                    System.out.println("You selected Polygon!\n\nEnter the number of sides: ");
+                    int numberOfSides = sc.nextInt();
+                    System.out.println("Enter the length of side: ");
+                    double lengthOfSides = sc.nextDouble();
+                    double polygonAnswer = polygon(numberOfSides, lengthOfSides);
+                    System.out.println("The area of the polygon is: " + polygonAnswer);
                     break;
                 default:
                     System.out.println("You didn't make a valid entry ");
