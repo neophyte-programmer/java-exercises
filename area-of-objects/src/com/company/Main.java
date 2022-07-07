@@ -107,9 +107,9 @@ public class Main {
                     ( 7 ) Ellipse
                     ( 8 ) Polygon
                     """);
-            int objectSelect = sc.nextInt();
+            int object2D = sc.nextInt();
 
-            switch (objectSelect) {
+            switch (object2D) {
                 case 1:
                     System.out.println("You selected Circle!\n\nEnter the radius: ");
                     double circleRadius = sc.nextDouble();
@@ -188,7 +188,57 @@ public class Main {
                     ( 5 ) Sphere
                     ( 6 ) Hemisphere
                     """);
-            int objectSelect = sc.nextInt();
+            int object3D = sc.nextInt();
+
+            switch (object3D) {
+                case 1:
+                    System.out.println("You selected Cube!\n\nEnter the length: ");
+                    double cubeLength = sc.nextDouble();
+                    double cubeAnswer = cube(cubeLength);
+                    System.out.println("The area of the cube is: " + cubeAnswer);
+                    break;
+                case 2:
+                    System.out.println("You selected Rectangular Prism!\n\nEnter the length: ");
+                    double rLength = sc.nextDouble();
+                    System.out.println("Enter the height: ");
+                    double rHeight = sc.nextDouble();
+                    System.out.println("Enter the width: ");
+                    double rWidth = sc.nextDouble();
+                    double rAnswer = rectangularPrism(rLength, rWidth, rHeight);
+                    System.out.println("The area of the rectangular prism is: " + rAnswer);
+                    break;
+                case 3:
+                    System.out.println("You selected Cylinder!\n\nEnter the radius: ");
+                    double cylinderRadius = sc.nextDouble();
+                    System.out.println("Enter the height: ");
+                    double cylinderHeight = sc.nextDouble();
+                    double cylinderAnswer = cylinder(cylinderRadius, cylinderHeight);
+                    System.out.println("The area of the cylinder is: " + cylinderAnswer);
+                    break;
+                case 4:
+                    System.out.println("You selected Cone!\n\nEnter the length: ");
+                    double coneLength = sc.nextDouble();
+                    System.out.println("Enter the radius: ");
+                    double coneRadius = sc.nextDouble();
+                    double coneAnswer = cone(coneRadius, coneLength);
+                    System.out.println("The area of the cone is: " + coneAnswer);
+                    break;
+                case 5:
+                    System.out.println("You selected Sphere!\n\nEnter the radius: ");
+                    double sphereRadius = sc.nextDouble();
+                    double sphereAnswer = sphere(sphereRadius);
+                    System.out.println("The area of the sphere is: " + sphereAnswer);
+                    break;
+                case 6:
+                    System.out.println("You selected Hemisphere!\n\nEnter the radius: ");
+                    double hemisphereRadius = sc.nextDouble();
+                    double hemisphereAnswer = sphere(hemisphereRadius);
+                    System.out.println("The area of the sphere is: " + hemisphereAnswer);
+                    break;
+                default:
+                    System.out.println("You didn't make a valid entry ");
+                    break;
+            }
         }
         else {
             System.out.println("You entered a wrong input! ");
